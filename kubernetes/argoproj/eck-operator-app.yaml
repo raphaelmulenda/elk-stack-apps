@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: elastic-system
     server: https://kubernetes.default.svc
-  project: elk-stack
+  project: elk-stack-project
   source:
     path: kubernetes/apps/eck-operator
     repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git

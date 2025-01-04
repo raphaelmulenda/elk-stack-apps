@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: argo-cicd
+  project: elk-stack-project
   source:
     repoURL: git@github.com:raphaelmulenda/kubernetes-cicd-project.git
     targetRevision: HEAD
