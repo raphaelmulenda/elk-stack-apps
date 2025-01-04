@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: game-2048.local
+  - host: game-test.local
     http:
       paths:
       - path: /
