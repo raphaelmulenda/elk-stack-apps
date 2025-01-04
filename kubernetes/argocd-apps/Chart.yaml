@@ -1,8 +1,8 @@
 apiVersion: v2
-name: elk-stack-apps
-description: A Helm chart for Elk-stack
+name: elk-stack-project
+description: A Helm chart to manage ArgoCD applications for Elk-stack
 version: 0.1.0
-appVersion: 0.0.1
+appVersion: 1.0.0
 type: application
 dependencies:
   - name: argocd-apps

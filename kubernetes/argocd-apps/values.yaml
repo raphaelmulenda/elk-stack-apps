@@ -1,6 +1,6 @@
-elk-stack-apps:
+argocd-apps:
   projects:
-    elk-stack:
+    elk-stack-project:
       namespace: argocd
       sourceRepos:
         - '*'
@@ -14,9 +14,9 @@ elk-stack-apps:
         warn: false
 
   applications:
-    elk-stack-argoproj:
+    elk-stack-app:
       namespace: argocd
-      project: elk-stack
+      project: elk-stack-project
       source:
         repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git
         targetRevision: HEAD
