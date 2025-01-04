@@ -2,7 +2,7 @@ apiVersion: v2
 name: argocd-apps
 description: A Helm chart for argocd-apps
 version: 0.1.0
-appVersion: 0.0.1
+appVersion: 0.0.2
 type: application
 dependencies:
   - name: argocd-apps

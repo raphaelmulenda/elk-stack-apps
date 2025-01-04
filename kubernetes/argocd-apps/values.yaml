@@ -1,4 +1,4 @@
-argocd-apps:
+elk-stact-apps:
   projects:
     elk-stack:
       namespace: argocd
@@ -14,13 +14,13 @@ argocd-apps:
         warn: false
 
   applications:
-    argoproj:
+    elk-stact-argoproj:
       namespace: argocd
       project: elk-stack
       source:
         repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git
         targetRevision: HEAD
-        path: kubernetes/argoproj/
+        path: kubernetes/elk-stact-argoproj/
       destination:
         server: https://kubernetes.default.svc
         namespace: argocd
