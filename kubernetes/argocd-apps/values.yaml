@@ -20,7 +20,7 @@ elk-stact-apps:
       source:
         repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git
         targetRevision: HEAD
-        path: kubernetes/elk-stact-argoproj/
+        path: kubernetes/argoproj/
       destination:
         server: https://kubernetes.default.svc
         namespace: argocd
