@@ -1,4 +1,4 @@
-elk-stact-apps:
+argocd-apps:
   projects:
     elk-stack:
       namespace: argocd
@@ -14,7 +14,7 @@ elk-stact-apps:
         warn: false
 
   applications:
-    elk-stact-argoproj:
+    argoproj:
       namespace: argocd
       project: elk-stack
       source:
