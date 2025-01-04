@@ -8,7 +8,7 @@ metadata:
 spec:
   project: elk-stack-project
   source:
-    repoURL: git@github.com:raphaelmulenda/kubernetes-cicd-project.git
+    repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git
     targetRevision: HEAD
     path: kubernetes/apps/game-test/overlays/development
   destination:
