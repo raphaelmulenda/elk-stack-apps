@@ -13,20 +13,20 @@ argocd-apps:
       orphanedResources:
         warn: false
 
-  applications:
-    elk-stack-app:
-      namespace: argocd
-      project: elk-stack-project
-      source:
-        repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git
-        targetRevision: HEAD
-        path: kubernetes/argoproj/
-      destination:
-        server: https://kubernetes.default.svc
-        namespace: argocd
-      syncPolicy:
-        syncOptions:
-          - CreateNamespace=true
-        automated:
-          prune: true
-          selfHeal: true
+  # applications:
+  #   elk-stack-app:
+  #     namespace: argocd
+  #     project: elk-stack-project
+  #     source:
+  #       repoURL: git@github.com:raphaelmulenda/elk-stack-apps.git
+  #       targetRevision: HEAD
+  #       path: kubernetes/argoproj/
+  #     destination:
+  #       server: https://kubernetes.default.svc
+  #       namespace: argocd
+  #     syncPolicy:
+  #       syncOptions:
+  #         - CreateNamespace=true
+  #       automated:
+  #         prune: true
+  #         selfHeal: true
